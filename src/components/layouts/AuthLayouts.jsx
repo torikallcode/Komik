@@ -74,7 +74,7 @@ export const AuthLayouts = () => {
           </div>
           {/* <About /> */}
         </div>
-        {/* <Footer /> */}
+        <Footer />
         <div className="flex flex-col items-center justify-center w-full max-w-3xl gap-8">
           {showModal && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">

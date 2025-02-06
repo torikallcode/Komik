@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer className="w-full py-8 bg-white border-t border-gray-200">
       <div className="container max-w-5xl px-4 mx-auto">
         {/* Top Section with Links */}
-        <div className="flex flex-wrap items-start justify-between mb-6 space-y-4 md:space-y-0">
+        <div className="grid grid-cols-2 gap-6 pb-5 md:grid-cols-4">
           {/* Company Links */}
           <div className="flex flex-col space-y-2">
             <h4 className="text-sm font-bold text-gray-800">WEBTOON</h4>
@@ -64,9 +64,9 @@ export const Footer = () => {
           <p className="text-xs text-gray-500">
             © {new Date().getFullYear()} WEBTOON. All Rights Reserved.
           </p>
-          <div className="flex justify-center mt-2 space-x-4 text-xs text-gray-500">
+          <div className="flex flex-wrap justify-center mt-2 space-x-4 text-xs text-gray-500">
             <a href="#" className="hover:text-blue-600">Privacy Policy</a>
-            <span>|</span>
+            <span className="hidden sm:inline">|</span>
             <a href="#" className="hover:text-blue-600">Cookie Settings</a>
           </div>
         </div>
@@ -74,4 +74,3 @@ export const Footer = () => {
     </footer>
   );
 };
-
