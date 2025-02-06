@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { Footer } from '../fragments/Footer';
 import { X } from 'lucide-react';
 import { Crown } from 'lucide-react';
+import { About } from '../fragments/About';
 
 export const AuthLayouts = () => {
   const dataImage = [
@@ -57,6 +58,23 @@ export const AuthLayouts = () => {
         <div className="flex items-center text-center justify-center w-full h-full max-w-4xl p-5 bg-gradient-to-br from-[#00ff95] to-primary mb-5">
           <h1 className="text-2xl text-white font-Semibold font-comic ">Happy Birthday!</h1>
         </div>
+        <div className='grid w-full max-w-5xl grid-cols-2 gap-3 p-5 mb-5 md:grid-cols-3 h-96'>
+          <div className='w-full col-span-2 row-span-3 bg-center bg-cover md:row-span-2 bg-sky-500 ' style={{ backgroundImage: `url('/img/p3-2.jpg')` }}>
+
+          </div>
+          <div className='grid content-between w-full h-full p-3 bg-gradient-to-br from-[#00ff95] to-primary relative'>
+            <span className='absolute z-10 w-full h-full bg-black opacity-30'></span>
+            <h1 className='z-20 text-xl font-medium text-white'>Kerajaan</h1>
+            <p className='z-20 text-white'>Kisah romantis di kerajaan yang bikin deg-degan</p>
+          </div>
+          <div className='grid content-between w-full h-full p-3 bg-gradient-to-br from-[#00ff95] to-primary relative'>
+            <span className='absolute z-10 w-full h-full bg-black opacity-30'></span>
+            <h1 className='z-20 text-xl font-medium text-white'>Kerajaan</h1>
+            <p className='z-20 text-white'>Kisah romantis di kerajaan yang bikin deg-degan</p>
+          </div>
+          {/* <About /> */}
+        </div>
+        {/* <Footer /> */}
         <div className="flex flex-col items-center justify-center w-full max-w-3xl gap-8">
           {showModal && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
@@ -95,7 +113,6 @@ export const AuthLayouts = () => {
           )}
         </div>
       </div>
-      <Footer />
       <div className="relative inline-block">
         <div className="fixed text-yellow-500 -translate-x-1/2 bottom-[80px] right-9 animate-bounce">
           <Crown fill="currentColor" className="w-9 h-9" />
@@ -107,6 +124,6 @@ export const AuthLayouts = () => {
           <h1 className='text-sm leading-tight font-comic'>Read <br /> Now</h1>
         </button>
       </div>
-    </div>
+    </div >
   );
 };

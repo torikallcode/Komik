@@ -12,25 +12,26 @@ const ImageWithMarquee = () => {
   })), []);
 
   return (
-    <div className="relative max-w-sm px-3 mx-auto">
-      <div className="relative inset-0 flex flex-col overflow-hidden">
-        {rows.map(({ id, isEven }) => (
-          <div
-            key={id}
-            className={`whitespace-nowrap font-poppins leading-tight flex ${isEven ? 'animate-marquee-right' : 'animate-marquee-left'
-              }`}
-          >
-            <span className="text-gray-600">{BASE_TEXT}</span>
-            <span className="text-gray-600">{BASE_TEXT}</span>
-          </div>
-        ))}
+    <div
+      className='relative max-w-sm mx-auto h-[360px] overflow-hidden'
+      style={{
+        backgroundImage: 'url"/img/lovesvgrepo.png")',
+        backgroundSize: 'cover',
+      }}
+    >
+      <div className="inset-0 bg-black bg-opacity-50"> {/* Optional overlay */}
+        <div className="inset-0 flex flex-col overflow-hidden">
+          {rows.map(({ id, isEven }) => (
+            <div
+              key={id}
+              className={`whitespace-nowrap font-poppins leading-tight flex ${isEven ? 'animate-marquee-right' : 'animate-marquee-left'}`}
+            >
+              <span className="text-white text-opacity-80">{BASE_TEXT}</span>
+              <span className="text-white text-opacity-80">{BASE_TEXT}</span>
+            </div>
+          ))}
+        </div>
       </div>
-      <img
-        src="/img/love1.png"
-        alt="Love"
-        className="absolute top-0 bottom-0 left-0 right-0 w-full"
-        loading="lazy"
-      />
     </div>
   );
 };
