@@ -58,21 +58,21 @@ export const AuthLayouts = () => {
         <div className="flex items-center text-center justify-center w-full h-full max-w-4xl p-5 bg-gradient-to-br from-[#00ff95] to-primary mb-5">
           <h1 className="text-2xl text-white font-Semibold font-comic ">Happy Birthday!</h1>
         </div>
-        <div className='grid w-full max-w-5xl grid-cols-2 gap-3 p-5 mb-5 md:grid-cols-3 h-96'>
-          <div className='w-full col-span-2 row-span-3 bg-center bg-cover md:row-span-2 bg-sky-500 ' style={{ backgroundImage: `url('/img/p3-2.jpg')` }}>
+        <div className='flex flex-col w-full max-w-5xl gap-3 p-5 mb-5 space-y-4 md:flex-row md:space-x-4 lg:justify-between '>
+          <div className='w-full bg-center bg-cover h-52 sm:h-64 xl:h-72 md:row-span-2 ' style={{ backgroundImage: `url('/img/p3-2.jpg')` }}>
 
           </div>
-          <div className='grid content-between w-full h-full p-3 bg-gradient-to-br from-[#00ff95] to-primary relative'>
-            <span className='absolute z-10 w-full h-full bg-black opacity-30'></span>
-            <h1 className='z-20 text-xl font-medium text-white'>Kerajaan</h1>
-            <p className='z-20 text-white'>Kisah romantis di kerajaan yang bikin deg-degan</p>
+          <div className='relative flex flex-col w-full h-full space-y-3 '>
+            <h1 className='text-3xl font-bold text-[#00ff95] uppercase'>Kanvas</h1>
+            <p className='max-w-sm font-poppins'>Sekarang webtoon buatanmu
+              dapat diterbitkan di KANVAS!
+              KANVAS terbuka bagi
+              siapapun yang ingin menerbitkan
+              webtoon sendiri!</p>
+            <button className="inline-flex items-center justify-center px-4 py-2 font-sans font-semibold tracking-wide text-white bg-[#00ff95] rounded-full w-fit">
+              Upload komik →
+            </button>
           </div>
-          <div className='grid content-between w-full h-full p-3 bg-gradient-to-br from-[#00ff95] to-primary relative'>
-            <span className='absolute z-10 w-full h-full bg-black opacity-30'></span>
-            <h1 className='z-20 text-xl font-medium text-white'>Kerajaan</h1>
-            <p className='z-20 text-white'>Kisah romantis di kerajaan yang bikin deg-degan</p>
-          </div>
-          {/* <About /> */}
         </div>
         <Footer />
         <div className="flex flex-col items-center justify-center w-full max-w-3xl gap-8">
