@@ -62,7 +62,7 @@ export const Footer = () => {
         {/* Bottom Section */}
         <div className="pt-6 text-center border-t border-gray-200">
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} WEBTOON. All Rights Reserved.
+            © {new Date().getFullYear()}  KOMIK. All Rights Reserved.
           </p>
           <div className="flex flex-wrap justify-center mt-2 space-x-4 text-xs text-gray-500">
             <a href="#" className="hover:text-blue-600">Privacy Policy</a>
