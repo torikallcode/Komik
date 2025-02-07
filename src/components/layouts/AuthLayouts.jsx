@@ -63,13 +63,13 @@ export const AuthLayouts = () => {
 
           </div>
           <div className='relative flex flex-col w-full h-full space-y-3 '>
-            <h1 className='text-3xl font-bold text-[#00ff95] uppercase'>Kanvas</h1>
-            <p className='max-w-sm font-poppins'>Sekarang webtoon buatanmu
+            <h1 className='text-3xl font-bold uppercase text-primary'>Kanvas</h1>
+            <p className='max-w-sm font-poppins'>Sekarang Komik buatanmu
               dapat diterbitkan di KANVAS!
               KANVAS terbuka bagi
               siapapun yang ingin menerbitkan
               webtoon sendiri!</p>
-            <button className="inline-flex items-center justify-center px-4 py-2 font-sans font-semibold tracking-wide text-white bg-[#00ff95] rounded-full w-fit">
+            <button className="inline-flex items-center justify-center px-4 py-2 font-sans font-semibold tracking-wide text-white bg-gradient-to-br from-[#00ff95] to-primary  rounded-full w-fit">
               Upload komik →
             </button>
           </div>
